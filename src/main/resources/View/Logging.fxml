@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.LoggingController">
+   <children>
+      <AnchorPane layoutY="3.0" prefHeight="394.0" prefWidth="600.0">
+         <children>
+            <AnchorPane layoutX="98.0" layoutY="64.0" prefHeight="266.0" prefWidth="403.0">
+               <children>
+                  <TextField fx:id="txtUserName" layoutX="35.0" layoutY="153.0" prefHeight="26.0" prefWidth="333.0" promptText="UserName" />
+                  <JFXButton buttonType="RAISED" layoutX="166.0" layoutY="210.0" onAction="#btnLoggingOnAction" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #222f3e; -fx-background-radius: 30;" text="Log in" textFill="#f3f7f1" />
+                  <ImageView layoutX="154.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../Image/icons8-user-96.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="6.0" layoutY="164.0" prefHeight="200.0" prefWidth="15.0" style="-fx-background-color: #ecf0f1;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

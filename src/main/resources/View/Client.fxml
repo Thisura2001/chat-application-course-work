@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="649.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.ClientController">
+   <children>
+      <ImageView fitHeight="694.0" fitWidth="538.0">
+         <image>
+            <Image url="@../Image/neon-chat-bubble-sign-on-dark-brick-wall-vector-28929222.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="694.0" fitWidth="538.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="root" prefHeight="694.0" prefWidth="538.0">
+         <children>
+            <AnchorPane fx:id="Pane" layoutY="614.0" prefHeight="74.0" prefWidth="538.0" style="-fx-background-color: #c8d6e5;">
+               <children>
+                  <TextField fx:id="txtArea" layoutX="100.0" layoutY="13.0" prefHeight="34.0" prefWidth="356.0" promptText="Type Something Here.." />
+                  <JFXButton layoutX="462.0" layoutY="13.0" prefHeight="34.0" prefWidth="41.0" text="." />
+                  <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="467.0" layoutY="17.0">
+                     <image>
+                        <Image url="@../Image/icons8-send-48.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="467.0" layoutY="13.0" onAction="#btnSendOnAction" prefHeight="34.0" prefWidth="32.0" text="." />
+                  <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="38.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../Image/icons8-image-48.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="38.0" layoutY="13.0" onAction="#btnImageOnAction" prefHeight="34.0" prefWidth="32.0" />
+                  <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="70.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../Image/icons8-face-48.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="70.0" layoutY="13.0" onAction="#btnEmojiOnAction" prefHeight="34.0" prefWidth="32.0" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="157.0" prefHeight="70.0" prefWidth="232.0" text="Chat Live" textFill="#e7ff61">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <ScrollPane fx:id="ScrollPane" layoutX="35.0" layoutY="70.0" prefHeight="523.0" prefWidth="467.0">
+               <content>
+                  <VBox fx:id="vbox" prefHeight="521.0" prefWidth="466.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
