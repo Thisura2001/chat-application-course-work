@@ -61,7 +61,7 @@ public class Client implements Runnable{
 
         stage.setOnCloseRequest(event -> {
             try {
-                outputStream.writeUTF(" Has left! \uD83D\uDE13 ");
+                outputStream.writeUTF(" Has left!");
                 outputStream.flush();
                 socket.close();
             } catch (IOException e) {
