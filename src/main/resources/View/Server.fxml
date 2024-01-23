@@ -7,17 +7,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="root" prefHeight="694.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.ServerController">
    <children>
       <AnchorPane layoutX="38.0" layoutY="51.0" prefHeight="612.0" prefWidth="462.0" style="-fx-background-color: #c8d6e5; -fx-background-radius: 50;">
          <children>
-            <Label layoutX="88.0" layoutY="182.0" text="Live Chat" textFill="#15591c">
+            <Label layoutX="88.0" layoutY="182.0" text="Live Chat" textFill="#796f31">
                <font>
                   <Font name="System Bold Italic" size="64.0" />
                </font>
             </Label>
-            <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="465.0" onAction="#btnChatOnAction" prefHeight="74.0" prefWidth="195.0" style="-fx-background-color: #1dd1a1; -fx-background-radius: 90;" text="Chat">
+            <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="465.0" onAction="#btnChatOnAction" prefHeight="74.0" prefWidth="195.0" style="-fx-background-color: #000000; -fx-background-radius: 90;" text="Chat" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>

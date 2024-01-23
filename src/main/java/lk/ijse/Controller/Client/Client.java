@@ -10,10 +10,9 @@ import lk.ijse.Controller.ClientController;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.Serializable;
 import java.net.Socket;
 
-public class Client implements Runnable, Serializable {
+public class Client implements Runnable{
     private final String name;
     private final Socket socket;
     private final DataInputStream inputStream;

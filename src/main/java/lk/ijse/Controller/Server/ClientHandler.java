@@ -11,7 +11,6 @@ import java.util.List;
 
 public class ClientHandler implements Runnable{
     public static final List<ClientHandler> clientHandlerList = new ArrayList<>();
-    public static ClientController chatFormController;
     private final Socket socket;
     private final DataInputStream inputStream;
     private final DataOutputStream outputStream;
