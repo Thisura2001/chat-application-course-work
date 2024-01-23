@@ -1,16 +1,27 @@
 package lk.ijse.Controller;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import lk.ijse.Controller.Client.Client;
 
+import java.io.*;
 import java.net.URL;
+import java.nio.file.Files;
 import java.util.ResourceBundle;
 
 public class ClientController implements Initializable {
@@ -53,27 +64,22 @@ public class ClientController implements Initializable {
 
     @FXML
     private VBox vBox;
-
-    public void writeMessage(String message) {
-    }
-
-    public void setImage(byte[] bytes, String utf) {
-    }
-
-    public void setClient(Client client) {
-    }
-
-    public void btnImageOnAction(ActionEvent actionEvent) {
-    }
-
-    public void btnImojiOnAction(ActionEvent actionEvent) {
-    }
-
-    public void btnSendOnAction(ActionEvent actionEvent) {
-    }
-
+    private Client client;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        emojiAnchorpane.setVisible(false);
+        int buttonIndex = 0;
+        for (int row = 0; row < 4; row++) {
+            for (int column = 0; column < 4; column++) {
+                if (buttonIndex < emojis.length) {
+                    String emoji = emojis[buttonIndex];
+                    JFXButton emojiButton = createEmojiButton(emoji);
+                    emojiGridpane.add(emojiButton, column, row);
+                    buttonIndex++;
+                } else {
+                    break;
+                }
+            }
+        }
     }
 }
