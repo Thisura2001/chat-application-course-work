@@ -22,7 +22,7 @@ public class Server implements Runnable {
         while (!serverSocket.isClosed()) {
             System.out.println("listening.......");
             try {
-                Socket accepted = serverSocket.accept();
+                Socket accepted = serverSocket.accept();//wait for the client req
                 ClientHandler clientHandler = new ClientHandler(accepted);
                 Thread thread = new Thread(clientHandler);
                 thread.start();

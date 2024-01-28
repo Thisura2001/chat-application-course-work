@@ -9,7 +9,7 @@ public class AppInitializer extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         stage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/View/Server.fxml"))));
-        stage.setTitle("Client");
+        stage.setTitle("Server");
         stage.show();
     }
 
